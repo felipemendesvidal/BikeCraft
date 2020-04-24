@@ -1,0 +1,377 @@
+/*confiurações gerais*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+p{
+	font-family: georgia, "times new roman", serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+img{
+	display: block; 
+	/*para a imagem ficar fluida*/
+	max-width: 100%;
+}
+.btn{
+	border: 3px solid #fec63e;
+	padding: 10px 30px;
+	color: #fec63e;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: .1em;
+	line-height: 20px; 
+}
+.btn:hover{
+	border: 3px solid #fff;
+	color: #fff;
+}
+.btn.btn-preto:hover{
+	border: 3px solid #000;
+	color: #000;
+}
+.subtitulo{
+	font-size:24px ;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.subtitulo:after{
+	/*conteudo, é obrigatorio para o objetor ser criado*/
+		content:"";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background-color: #000;
+		margin: 8px auto;
+}
+.subtitulo_interno{
+	font-size:24px ;
+	font-weight: bold;
+	line-height: 30px;
+	letter-spacing: .1em;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.subtitulo_interno:after{
+	/*conteudo, é obrigatorio para o objetor ser criado*/
+		content:"";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background-color: #000;
+		margin: 8px 0;
+}
+/*parte do outro html - sobre inicio*/
+.introducao_interna{
+	width: 100%;
+	height: 160px;
+	margin-top: 92px;
+	text-align: center;
+	color: #fff;
+	padding-top: 30px;
+
+
+}
+.introducao_interna h1{
+	font-size: 36px;
+	/*tamanho da linha*/
+	/*line-height: 60px*/
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+.introducao_interna h1:after{
+	  content:"";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background-color: #fff;
+		margin: 6px auto 8px auto;
+}
+/*fim*/
+/*fim*/
+
+/*inicio*/
+/*header*/
+.header{
+	width: 100%;
+	background: #fec63e;/*Amarelo*/
+	padding: 15px 0;
+	/*para deixar o menu fixo*/
+	position: fixed;
+	top: 0;
+	/*todo conteudo vai igonarar esse, resolva dando no conteudo seguinte uma marin exatamente com o tamanho desse bloco*/
+	/*para as coisas não ficarem passando por cima do bloco fixo, use o z-index*/
+	/*    **    */
+	z-index: 10;
+}
+.header_menu{
+	text-align: right;
+	
+}
+.header_menu ul li{
+	display: inline-block; 
+	margin-left: 20px;
+	margin-top: 20px;
+
+}
+	/*alterando tipografia*/
+.header_menu ul li a{
+	/*Aumentando a area de contato*/
+	padding: 10px 0;
+	color: #000;
+	/*rossura da letra*/
+	font-weight: bold;
+	/*tudo em letra maiuscula*/
+	text-transform: uppercase;
+	/*espaçamento entre as letras*/
+	letter-spacing: 0.1em;
+	/*altura da linha*/
+	line-height: 20px;
+	font-size: 14px;
+}
+.header_menu ul li a:hover{
+	color: #fff ;
+}
+.header_menu ul li a.menu_ativo{
+	color: #fff;
+}
+/*Bloco de Introdução*/
+.introducao{
+	width: 100%;
+	height: 380px;
+	background: url(../img/bg.jpg) no-repeat center;
+	height: 500px;
+	/*tamanho do backround, cover faz cobrir o espaço inteiro*/
+	/*  **  */
+	background-size:cover; 
+	margin-top: 90px;
+	text-align: center;
+	padding-top: 80px;
+}
+.introducao h1{
+	font-size: 48px;
+	/*tamanho da linha*/
+	/*line-height: 60px*/
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+
+}
+	.quote-externo{
+		/*define ate onde crecer*/
+		max-width: 320px;
+		/*como já usou um width, tex aline center não resolve*/
+		margin: 0 auto;
+		color: #fff;
+		margin-bottom: 100px;
+	}
+	.quote-externo p{
+		font-style: italic;
+	}
+	/*essa pseudo class adiciona um elemento html num local especifico*/
+	/*o after fara com o de baixo*/
+	.quote-externo p:before, .quote-externo p:after{
+		/*conteudo, é obrigatorio para o objetor ser criado*/
+		content:"";
+		display: block;
+		width: 60px;
+		height: 3px;
+		background-color: #fff;
+		margin: 15px auto 8px auto;
+
+	}
+	.quote-externo cite{
+		font-weight: bold;
+		font-style: normal;
+		/*espaço entre as letras*/
+		letter-spacing: .1em;
+		font-size: 15px;
+	}
+/*produtos*/
+.produto{
+	padding: 60px 0;
+}
+.lista_produtos li{
+	background:#fec63e; 
+	text-align: center;
+}
+.lista_produtos li img{
+	margin: 0 auto;
+	}
+.lista_produtos li h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 20px;
+
+}
+.lista_produtos li h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 2px auto;
+}
+.lista_produtos li p{
+	padding: 10px 20px 20px 20px;
+}
+	.lista_icone{
+		background: #000;
+		padding: 20px 50px;
+		text-align: center;
+	}
+.call-to-action{
+	text-align: center;
+	padding: 40px;
+	/*limpando o floot dos blocos de cima para conseguir dar o paddin*/
+	clear: both;
+}
+.call-to-action p{
+	margin-bottom: 20px;
+}
+/*Portfolio*/
+.portifolio{
+	background-color: #000;
+	width: 100%;
+	padding: 40px 0;
+}
+.portifolio .subtitulo{
+	color:#fec63e; 
+}
+.portifolio .subtitulo:after{
+	background:#fec63e;
+}
+/*a last child seleciona o ultimo item*/
+.portfolio_lista li:last-child {
+	margin-top: 20px;
+}
+.portifolio .call-to-action p{
+	color: #fff;
+}
+/*Qualidade*/
+.qualidade{
+	padding: 60px 0;
+}
+/*para colocar a imagem de uma forma diferente*/
+.qualidade:after{
+	/*todo pseudo after precisa ter uma conteudo*/
+	content: "";
+	/*tamanho da imagem*/
+	width: 634px;
+	/*altura da imagem*/
+	height: 83px;
+	display: block; 
+	background: url(../img/linhas.png) no-repeat center;
+	position: absolute;
+	top: 209px;
+	right: 162px;
+	z-index: -1;
+
+}
+.qualidade img{
+	margin: 0 auto;
+}
+.qualidade_lista{
+	padding-top: 20px;
+	/*Limpa a flutuação de aluns elementos, como tem muitos
+	elementos flutuando um em cima do outro, ajuda
+	clear-fixe*/
+	overflow: auto;
+
+}
+.qualidade_lista li{
+	text-align: center;
+	padding: 0 40px;
+}
+.qualidade_lista li h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 20px;
+	
+}
+.qualidade_lista li h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #000;
+	margin: 6px auto;
+}
+.quebra{
+	width: 100%;
+	height: 220px;
+	background: url(../img/bg-footer.jpg) center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.quebra .quote-externo{
+	max-width: 400px;
+}
+/*footer*/
+.footer{
+	width: 100%;
+	background: #000;
+	color: #fff;
+	padding: 20px 0;
+}
+	/*estilizando eral site*/
+.footer h3{
+	font-size: 18px;
+	line-height: 25px;
+	color: #fec63e;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+.footer h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #fec63e;
+	margin: 3px 0 12px 0;
+}
+	.footer_historia{
+		padding-right: 40px;
+	}
+	.footer_contato ul li{
+		font-size: 14px;
+		line-height: 20px;
+		font-family: georgia, "times new roman", serif;
+
+	}
+	.footer_rede ul li{
+		display: inline-block;
+		margin-left: 10px;
+
+	}
+	.footer_rede ul li a{
+		border: 3px solid #fec63e;
+		padding: 3px;
+		/*não esqueça do display*/
+		display: block;
+		padding: 10px;
+	}
+	.footer_rede ul li a:hover{
+		border:3px solid #fff;
+	}
+.copy{
+	width: 100%;
+	background: #fec63e;
+	padding: 20px 0;
+	text-align: center;
+	
+}

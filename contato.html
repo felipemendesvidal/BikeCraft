@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+	<head>
+		<title>Bike-Craft - Contato</title>
+		<meta charset="utf-8">
+		<!-- a posição dos links tbm serve como hierarquia, todos estão no mesmo patamar, porem os de baixo refaz auguma coisa do de cima -->
+		<!-- não é bom ter varios arquivos linkados, tena apenas um, no final de cada site unifique todos os arquivos, isso melhora o site, em questão de velocidade -->
+		<!-- normalize -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<!-- reset baseado no do erick mayer -->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<!-- GRID -->
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<!-- css da paina sobre -->
+		<link rel="stylesheet" type="text/css" href="css/contato.css">
+		<!-- responsivo -->
+		<link rel="stylesheet" type="text/css" href="css/responsivo.css">
+
+		
+	</head>
+	<body>
+			<!-- usando a classe Container do rid que foi instalado, linkado no projeto -->
+			<!-- inicio cabeçalho do site -->
+			<header class="header">
+				<div class="container">
+					<a href="index.html" class="grid-4"><img src="img/logo.png" alt="Logootipo da empresa bike craft, em preto com o fundo vazado"></a>
+					<nav class="grid-12 header_menu">
+						<ul>
+							<!-- interatividade -->
+							<li><a href="sobre.html" >Sobre</a></li>
+							<li><a href="produtos.html" >Produtos</a></li>
+							<li><a href="portifolio.html">Portifolio</a></li>
+							<li><a href="contato.html" class="menu_ativo">Contato</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<!-- fim do cabeçalho do site -->
+			<!-- Inicio introdução -->
+			<section class="introducao_interna interna_contato">
+				<!-- Container para a referenciação -->
+				<div class="container">
+					<h1>Contato</h1>
+					<p>Faça você tambem sua bike</p>
+					
+				</div>
+			</section>
+			<!-- fim introdução -->
+			<!-- inicio formulario -->
+			<section class="contato container">
+				<!-- lembre se, para ter um fundo que se expande é necessario ter uma div dentro de outra section -->
+					<!-- usamos o id no formulario, para quando formos usar phhp, ficar melor de indentificar -->
+					<form id="form_orcamento" class="contato-form grid-8">
+						<!-- label são os titulos dos inputs -->
+						<label for="nome">Nome</label>
+						<!-- o input é o campo de diitação -->
+						<input type="text" id="nome">
+						<!-- label são os titulos dos inputs -->
+						<label for="email">E-mail</label>
+						<!-- o input é o campo de diitação -->
+						<input type="text" id="emil">
+						<!-- label são os titulos dos inputs -->
+						<label for="telefone">Telefone</label>
+						<!-- o input é o campo de diitação -->
+						<input type="text" id="telefone">
+						<label for="espec">Especificações</label>
+						<!-- ara para digitação mairo  -->
+						<textarea id="espec"></textarea>
+						<!-- botao de enviar, submt-->
+						<button type="submit" class="btn btn-preto">Enviar</button>
+					</form>
+					<!-- lista com dados do lado -->
+					<div class="contato_dados grid-8">
+						<h3>Dados</h3>
+						<!-- spam é como se fosse um elemento enerico de um elemento em linha -->
+						<span> +55 11 98793-2714</span>
+						<span>Orcamento@bikecraft.com</span>
+						<span>Rua abobrina 986 -vila das oricanelhias</span>
+						<span>-SP- Brasil</span>
+						<h3>Redes sociais</h3>
+						<ul>
+							<li><a href="#" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Icone redes-social"></a></li>
+							<li><a href="#" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Icone redes-social"></a></li>
+							<li><a href="#" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Icone redes-social"></a></li>
+							<!-- ctrl + { ou } Indenta para o lado do colchete-->
+						</ul>
+					</div>
+			</section>
+			<!-- fim do formulario -->
+			<!--inicio mapa -->
+			<section class="container contato_mapa">
+				<a href="https://google.com" target="_blank" class="grid-16"><img src="img/endereco-bikcraft.jpg" alt="encereco bikecraft em imagem"></a>
+			</section>
+			<!--  fim mapa -->
+			<!-- Inicio foote -->
+			<section class="quebra">
+					<blockquote class="quote-externo container">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<cite>Oto oao ninguem</cite>
+					</blockquote>	
+			</section>
+			<footer>
+				<div class="footer">
+					<div class="container">
+						<div class="grid-8 footer_historia">
+							<h3>Nossa Historia</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+						</div>
+
+						<div class="grid-4 footer_contato">
+							<h3>Contato</h3>
+							<ul>
+								<li>11 99999-9999</li>
+								<li>contanto@bikekraft.com.br</li>
+								<li>Rua das dez furunfunfelhas</li>
+							</ul>
+						</div>
+
+							<div class="grid-4 footer_rede">
+								<h3>Contato</h3>
+								<ul>
+									<li><a href="#" target="_blank"><img src="img/redes-sociais/facebook.png" alt="Icone redes-social"></a></li>
+									<li><a href="#" target="_blank"><img src="img/redes-sociais/instagram.png" alt="Icone redes-social"></a></li>
+									<li><a href="#" target="_blank"><img src="img/redes-sociais/twitter.png" alt="Icone redes-social"></a></li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				<div class="copy">
+					<div class="container">
+						<p class="grid-16">Todos os direitos reservado|Projeto com fins academico</p>
+					</div>
+				</div>
+			</footer>
+			<!-- fim foote -->
+			<!-- inicio js -->
+			<!-- adicione primeiro a biblioteca -->
+			<!-- aqui não se usa escrever os codios, é apenas para carregar a biblipteca  -->
+			<script type="js/libs/jquery-1.11.2.min.js">
+			</script>
+			<!-- scrips que vai escrever -->
+			<!-- todo codigo tirado da net aqui -->
+			<script type="js/plugins.js"></script>
+			<!-- tudo feito na mão -->
+			<script type="js/main.js"></script>
+
+			<!-- fim JS -->
+	</body>
+	<!-- obs: salve as fotos com um padrão legao, sem nomes ficticios. isso pode influenciar no \SEO -->
+</html>
+
+
+
+
+
+
+
